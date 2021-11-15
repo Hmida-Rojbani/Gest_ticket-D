@@ -14,7 +14,7 @@ import lombok.Data;
 public class TableEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int numero;
+	private Integer numero;
 	
 	private int nbCouverts;
 	@Enumerated(EnumType.STRING)
