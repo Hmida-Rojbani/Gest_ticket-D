@@ -17,9 +17,9 @@ import lombok.AllArgsConstructor;
 public class ClientService {
 	
 	private ClientRepository clientRepository;
-	
+	private ModelMapper mapper;
 	public ClientResDTO saveToDB(ClientReqDTO clientReqDTO) {
-		ModelMapper mapper = new ModelMapper();
+		
 		/*
 		 * Client entity = new Client(); entity.setNom(clientReqDTO.getNom());
 		 * entity.setPrenom(clientReqDTO.getPrenom());
